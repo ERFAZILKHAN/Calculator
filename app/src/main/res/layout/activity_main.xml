@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="12sp"
+        android:textAlignment="textEnd"
+        android:textColor="@color/purple_500"
+        android:textSize="64sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvExpression"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvExpression"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="12sp"
+        android:layout_marginBottom="28dp"
+        android:textAlignment="textEnd"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tvClear"
+                style="@style/operatorButton"
+                android:text="@string/clear" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tvpresentage"
+                style="@style/operatorButton"
+                android:text="@string/Per"
+                android:textSize="32sp"
+
+
+                />
+            <com.google.android.material.button.MaterialButton
+                app:icon="@drawable/baseline_backspace_24"
+                app:iconTint="@color/btnBackground2"
+                android:id="@+id/tvBack"
+                android:contentDescription="@string/back"
+                style="@style/operatorButton"
+
+
+
+                />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tvDivied"
+                style="@style/operatorButton"
+                android:text="@string/div"
+                />
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tvSevin"
+                style="@style/digitButton"
+                android:text="@string/seven"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tvEight"
+                style="@style/digitButton"
+                android:text="@string/eight"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tvNine"
+                style="@style/digitButton"
+                android:text="@string/nine"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tvmaltiple"
+                style="@style/operatorButton"
+                android:text="@string/mul"
+                />
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tvfour"
+                style="@style/digitButton"
+                android:text="@string/four"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tvfive"
+                style="@style/digitButton"
+                android:text="@string/five"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tvsix"
+                style="@style/digitButton"
+                android:text="@string/six"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tvminus"
+                style="@style/operatorButton"
+                android:text="@string/sub"
+                />
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tvone"
+                style="@style/digitButton"
+                android:text="@string/one" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tvtwo"
+                style="@style/digitButton"
+                android:text="@string/two"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tvthree"
+                style="@style/digitButton"
+                android:text="@string/three"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tvadd"
+                style="@style/operatorButton"
+                android:text="@string/add"
+                />
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tvdoublezero"
+                style="@style/digitButton"
+                android:text="@string/doubleZero"
+              android:textSize="20sp"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tvzero"
+                style="@style/digitButton"
+                android:text="@string/zero" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tvdot"
+                style="@style/digitButton"
+                android:text="@string/dot" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/tvequal"
+                style="@style/operatorButton"
+                android:text="@string/equal"
+                />
+
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
